@@ -31,11 +31,11 @@ Uncommon_Block_Probability: 4001 ##Default = 4001  Blocks in this group: Mossy C
 ##Make sure there is only one space in between each Id.
 
 BlockGroups:
-  Mythic: '22 41 42 57 116 117 133 152'
-  Unique: '9 11 46 47 52 54 56 88 89 110 129 155'
-  Rare: '14 21 30 35 45 49 73 86 103 112 153'
-  Uncommon: '13 15 24 48 82 87'
-  Abundant: '1 2 3 12 16 17'
+  Mythic: '22 41 42 57 116 117 133'
+  Unique: '9 11 46 47 52 54 56 88 89 110 129 152 155'
+  Rare: '14 21 30 35 45 49 73 86 103 112 153 168 170 201 202'
+  Uncommon: '13 15 24 48 82 87 179'
+  Abundant: '1 2 3 5 12 16 17 162'
 
 ##The plugin generates a random number between 0 and 99 here. If you set Chest_Prob_Mythic to 10 and Chest_Prob_Rare to 20 for instance,
 ##the plugin will place a Mythic item in the chest on random numbers 0 - 9, a Rare item on random numbers 10 - 19, and a Normal item from 20 to 99.
@@ -48,7 +48,7 @@ Chest_Prob_Rare: 6
 
 ChestItems:
   Mythic: '383:1'
-  Rare: '19:1 41:1 42:2 46:2 47:2 49:4 152:1 256:1 257:1 258:1 267:1 276:1 277:1 278:1 279:1 293:1 292:1 264:3 306:1 307:1 308:1 309:1 310:1 311:1 312:1 313:1 348:16 368:3 369:1 370:1 376:2 377:1 378:1 388:3'
+  Rare: '19:1 41:1 42:2 46:2 47:2 49:4 152:1 154:1 256:1 257:1 258:1 267:1 276:1 277:1 278:1 279:1 293:1 292:1 264:3 306:1 307:1 308:1 309:1 310:1 311:1 312:1 313:1 348:16 356:2 368:3 369:1 370:1 376:2 377:1 378:1 388:3'
   Normal: '3:32 2:4 4:32 17:12 45:6 81:6 87:12 260:2 262:16 263:12 265:6 266:4 287:12 295:5 322:2 331:16 350:10 352:8 361:5 362:5 364:10 366:10 392:5 396:3 406:16'
 
 ## If AllBlocksOneWorld at the very top of this config is false, you'll want to edit these values to change what blocks can spawn in a normal world.
@@ -56,22 +56,22 @@ ChestItems:
 
 NormalConfig:
   BlockGroups:
-    Mythic: '22 41 42 57 116 133 152'
-    Unique: '9 11 46 47 52 54 56 110 129'
-    Rare: '14 21 30 35 45 49 73 86 103'
-    Uncommon: '13 15 24 48 82'
-    Abundant: '1 2 3 12 16 17'
+    Mythic: '22 41 42 57 116 133'
+    Unique: '9 11 46 47 52 54 56 110 129 152'
+    Rare: '14 21 30 35 45 49 73 86 98 103 168 170 201 202'
+    Uncommon: '13 15 24 48 82 179'
+    Abundant: '1 2 3 5 12 16 17 162'
   ChestItems:
     Mythic: '383:1'
-    Rare: '19:1 41:1 42:2 46:2 47:2 49:4 152:1 256:1 257:1 258:1 267:1 276:1 277:1 278:1 279:1 293:1 292:1 264:3 306:1 307:1 308:1 309:1 310:1 311:1 312:1 313:1 368:1 388:3'
-    Normal: '3:32 2:4 4:32 17:12 45:6 81:6 260:2 262:16 263:12 265:6 266:4 287:12 295:5 322:2 331:16 350:10 352:8 361:5 362:5 364:10 366:10 392:5 396:3'
+    Rare: '19:1 41:1 42:2 46:2 47:2 49:4 152:1 256:1 257:1 258:1 267:1 276:1 277:1 278:1 279:1 293:1 292:1 264:3 306:1 307:1 308:1 309:1 310:1 311:1 312:1 313:1 356:2 368:1 388:3'
+    Normal: '3:32 2:4 4:32 17:12 45:6 81:6 162:12 260:2 262:16 263:12 265:6 266:4 287:12 295:5 322:2 331:16 350:10 352:8 361:5 362:5 364:10 366:10 392:5 396:3'
 
 
 NetherConfig:
   Nether_World_Name: NetherSkyGrid
   Nether_World_Height: 128
   NetherBlocks:
-    Rare: '11 13 52 54 88 155'
+    Rare: '11 13 52 54 88 89 155'
     Normal: '87 87 87 87 87 87 112 113 153'
     RareProb: 1
   NetherChestItems:
